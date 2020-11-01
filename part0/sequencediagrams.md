@@ -17,6 +17,8 @@ note right of browser: js-code requests JSON from the server
 browser->server: HTTP GET [https://studies.cs.helsinki.fi/exampleapp/data.json](https://studies.cs.helsinki.fi/exampleapp/data.json)  
 server-->browser: [{"content":"42","date":"2020-11-01T13:12:54.825Z"},...]  
 
+![new note](/part0/new%20note.png)
+
 ### 0.5 Single page app
 
 title Single page app
@@ -29,7 +31,9 @@ browser->server: HTTP GET [https://studies.cs.helsinki.fi/exampleapp/spa.js](htt
 server-->browser:spa.js  
 note right of browser: js-code requests JSON from the server  
 browser->server: HTTP GET [https://studies.cs.helsinki.fi/exampleapp/data.json](https://studies.cs.helsinki.fi/exampleapp/data.json)  
-server-->browser: [{"content":"llll","date":"2020-11-01T09:45:16.670Z"},...]  
+server-->browser: [{"content":"llll","date":"2020-11-01T09:45:16.670Z"},...] 
+
+![Single page app](/part0/Single%20page%20app.png)
 
 ### 0.6 New note
 
@@ -39,3 +43,5 @@ browser->server: HTTP POST [https://studies.cs.helsinki.fi/exampleapp/new_note_s
 note right of browser: The POST request contains the new note as JSON-data containing both the content and the date  
 note left of server: The Content-Type header of the request tells the server that the included data is in JSON format  
 server-->browser:JSON {content: "42", date: "2020-11-01T17:07:11.424Z"}  
+
+![New note](/part0/New%20note%20(1).png)
